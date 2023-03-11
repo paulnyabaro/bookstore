@@ -73,6 +73,7 @@ WSGI_APPLICATION = 'bookstore.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+# Using postgresql
 DATABASES = {
     'default': {
         "ENGINE": "django.db.backends.postgresql",
