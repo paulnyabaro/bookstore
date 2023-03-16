@@ -16,3 +16,5 @@ class CustomUserAdmin(UserAdmin):
         'username',
         'is_superuser',
     ]
+
+admin.site.register(CustomUser, CustomUserAdmin)
