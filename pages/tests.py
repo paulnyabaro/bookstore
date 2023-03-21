@@ -3,6 +3,10 @@ from django.urls import reverse
 
 
 class HomepageTests(SimpleTestCase):
+    def setUp(self):
+        url = reverse('home')
+        self.response = self.client.get(url)
+
     def test_url_exists_at_correct_location(self):
         response = self.client.get('/')
         self.assertEqual(response.status_code, 200)
