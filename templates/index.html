@@ -3,5 +3,11 @@
 {% block content %}
 <section>
     <h1>This is the home page</h1>
+    {% if user.is_authenticated %}
+    <p>Hi {{ user.email }}</p>
+    {% else %}
+    <p>You are not logged in</p>
+    <a href="{% url 'login' %}">Log In</a>
+    {% endif %}
 </section>
 {% endblock %}
