@@ -126,7 +126,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
-STATIC_ROOT = [BASE_DIR / 'staticfiles'] # Where static files will be stored after collectstatic is run
+STATIC_ROOT = BASE_DIR / 'staticfiles' # Where static files will be stored after collectstatic is run
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 
 # Default primary key field type
