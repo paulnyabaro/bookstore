@@ -145,3 +145,8 @@ AUTH_USER_MODEL = 'accounts.CustomUser'
 # Auth redirect
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
+
+
+# Django crispy forms
+CRISPY_ALLOWED_TEMPLATE_PACK = 'bootstrap5'
+CRISPY_TEMPLATE_PACK =  'bootstrap5'
