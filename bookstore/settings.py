@@ -148,7 +148,7 @@ AUTH_USER_MODEL = 'accounts.CustomUser'
 
 # Auth redirect
 LOGIN_REDIRECT_URL = 'home'
-LOGOUT_REDIRECT_URL = 'home'
+ACCOUNT_LOGOUT_REDIRECT = 'home'
 
 
 # Django-allauth config
