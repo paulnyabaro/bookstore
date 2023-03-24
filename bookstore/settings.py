@@ -160,6 +160,9 @@ AUTHENTICATION_BACKENDS = (
     'allauth.account.auth_backends.AuthenticationBackend', # Allauth authentication backend
 )
 
+# Setting the default value for remember me
+# ACCOUNT_SESSION_REMEMBER = True
+
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # Terminal email backend
 
 # Django crispy forms
