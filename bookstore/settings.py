@@ -50,6 +50,9 @@ INSTALLED_APPS = [
     'pages.apps.PagesConfig',
 ]
 
+# Django-allauth config
+SITE_ID = 1
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
