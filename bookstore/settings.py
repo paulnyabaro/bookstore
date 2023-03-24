@@ -50,12 +50,6 @@ INSTALLED_APPS = [
     'pages.apps.PagesConfig',
 ]
 
-# Django-allauth config
-SITE_ID = 1
-
-AUTHENTICATION_BACKENDS = (
-    'django.contrib.auth.backends.ModelBackend'
-)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -160,3 +154,12 @@ LOGOUT_REDIRECT_URL = 'home'
 # Django crispy forms
 CRISPY_ALLOWED_TEMPLATE_PACK = 'bootstrap5'
 CRISPY_TEMPLATE_PACK =  'bootstrap5'
+
+# Django-allauth config
+SITE_ID = 1
+
+# Authentication backend
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend', # Allauth authentication backend
+)
