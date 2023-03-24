@@ -151,10 +151,6 @@ LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 
 
-# Django crispy forms
-CRISPY_ALLOWED_TEMPLATE_PACK = 'bootstrap5'
-CRISPY_TEMPLATE_PACK =  'bootstrap5'
-
 # Django-allauth config
 SITE_ID = 1
 
@@ -165,3 +161,7 @@ AUTHENTICATION_BACKENDS = (
 )
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # Terminal email backend
+
+# Django crispy forms
+CRISPY_ALLOWED_TEMPLATE_PACK = 'bootstrap5'
+CRISPY_TEMPLATE_PACK =  'bootstrap5'
