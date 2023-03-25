@@ -166,6 +166,12 @@ AUTHENTICATION_BACKENDS = (
 # Password repeat on signup
 ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False
 
+# Account authentication settings
+ACCOUNT_USERNAME_REQUIRED = False
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_UNIQUE_EMAIL = True
+
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # Terminal email backend
 
 # Django crispy forms
