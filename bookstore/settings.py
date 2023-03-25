@@ -163,6 +163,9 @@ AUTHENTICATION_BACKENDS = (
 # Setting the default value for remember me
 # ACCOUNT_SESSION_REMEMBER = True
 
+# Password repeat on signup
+ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False
+
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # Terminal email backend
 
 # Django crispy forms
