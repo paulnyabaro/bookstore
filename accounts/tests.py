@@ -2,9 +2,6 @@ from django.contrib.auth import get_user_model
 from django.test import TestCase
 from django.urls import reverse, resolve
 
-from .forms import CustomUserCreationForm
-from .views import SignupPageView
-
 
 class CustomUserTests(TestCase):
     def test_create_user(self):
@@ -31,8 +28,11 @@ class CustomUserTests(TestCase):
 
 
 class SignupPageTests(TestCase):
+    username = 'newuser'
+    email = 'newuser@email.com'
+
     def setUp(self):
-        url = reverse('signup')
+        url = reverse('account_signup')
         self.response = self.client.get(url)
 
     def test_signup_template(self):
