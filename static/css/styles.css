@@ -3,6 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-h2{
-    color: red;
+html{
+    scroll-behavior: smooth;
 }
