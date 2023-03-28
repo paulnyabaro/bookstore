@@ -91,14 +91,8 @@ WSGI_APPLICATION = 'bookstore.wsgi.application'
 
 # Using Postgresql database
 DATABASES = {
-    'default': {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "postgres",
-        "USER": "postgres",
-        "PASSWORD": "postgres",
-        "HOST": "db",
-        "PORT": 5432,
-    }
+    'default': env.dj_db_url('DATABASE_URL',
+    default='postgres://postgres@db/postgres')
 }
 
 
