@@ -180,7 +180,7 @@ ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # Terminal email backend
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' # Terminal email backend
 
 # Django crispy forms
 CRISPY_ALLOWED_TEMPLATE_PACK = 'bootstrap5'
