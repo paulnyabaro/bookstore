@@ -52,7 +52,6 @@ INSTALLED_APPS = [
     # Local
     'accounts.apps.AccountsConfig',
     'pages.apps.PagesConfig',
-    'books.apps.BooksConfig',
 ]
 
 
@@ -181,14 +180,7 @@ ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' # SMTP email backend
-
-# Email server configuration
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'paulosemonyabaro@gmail.com'
-EMAIL_HOST_PASSWORD = 'abocomeaoxeghckt'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # Terminal email backend
 
 # Django crispy forms
 CRISPY_ALLOWED_TEMPLATE_PACK = 'bootstrap5'
