@@ -185,3 +185,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # Terminal emai
 # Django crispy forms
 CRISPY_ALLOWED_TEMPLATE_PACK = 'bootstrap5'
 CRISPY_TEMPLATE_PACK =  'bootstrap5'
+
+# Default sender email displayed on sent emails
+DEFAULT_FROM_EMAIL = 'admin@djangobookstore.com'
