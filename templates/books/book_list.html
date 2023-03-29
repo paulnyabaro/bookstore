@@ -9,7 +9,7 @@
             {% for book in book_list %}
             <div class="col-md-4">
                 <div class="card p-2">
-                    <a href="{% url 'book_detail' book.pk %} ">{{ book.title }}</a>
+                    <a href="{{ book.get_absolute_url }} ">{{ book.title }}</a>
                 </div>
             </div>
             {% endfor %}
