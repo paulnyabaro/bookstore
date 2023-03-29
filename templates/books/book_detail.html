@@ -1,18 +1,16 @@
 {% extends '_base.html' %}
-{% block title %}Books{% endblock %}
+{% block title %}Books detail{% endblock %}
 
 {% block content %}
 <section class="py-4 py-lg-5">
     <div class="container">
         <h1>Book lists</h1>
         <div class="row">
-            {% for book in book_list %}
             <div class="col-md-4">
                 <div class="card p-2">
                     <a href="">{{ book.title }}</a>
                 </div>
             </div>
-            {% endfor %}
         </div>
     </div>
 </section>
