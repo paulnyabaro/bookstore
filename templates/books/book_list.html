@@ -8,7 +8,9 @@
         <div class="row">
             {% for book in object_list %}
             <div class="col-md-4">
-                {{ book.title }}
+                <div class="card p-2">
+                    {{ book.title }}
+                </div>
             </div>
             {% endfor %}
         </div>
