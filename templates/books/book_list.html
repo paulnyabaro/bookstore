@@ -1,10 +1,17 @@
 {% extends '_base.html' %}
-{% block title %}Book lists{% endblock %}
+{% block title %}Books{% endblock %}
 
 {% block content %}
 <section class="py-4 py-lg-5">
     <div class="container">
         <h1>Book lists</h1>
+        <div class="row">
+            {% for book in object_list %}
+            <div class="col-md-4">
+                {{ book.title }}
+            </div>
+            {% endfor %}
+        </div>
     </div>
 </section>
 {% endblock %}
