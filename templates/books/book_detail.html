@@ -8,8 +8,10 @@
             <h1>{{ book.title }}</h1>
             <p>Author: {{ book.author }}</p>
             <p>Price: {{ book.price }}</p>
+            {% if book.reviews.all %}
             <h3>Reviews</h3>
-            <ul>
+            {% endif %}
+            <ul class="list-unstyled">
                 {% for review in book.reviews.all %}
                 <li>{{ review.review }} by <small class="text-muted">{{ review.author }}</small></li>
                 {% endfor %}
