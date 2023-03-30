@@ -189,3 +189,7 @@ CRISPY_TEMPLATE_PACK =  'bootstrap5'
 
 # Default sender email displayed on sent emails
 DEFAULT_FROM_EMAIL = 'admin@djangobookstore.com'
+
+# Media settings
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media/'
