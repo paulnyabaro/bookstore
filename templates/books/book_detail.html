@@ -5,7 +5,9 @@
 <section class="py-4 py-lg-5">
     <div class="container">
         <div class="card p-2">
+            {% if book.cover %}
             <img src="{{ book.cover.url }}" width="100%" alt="">
+            {% endif %}
             <h1>{{ book.title }}</h1>
             <p>Author: {{ book.author }}</p>
             <p>Price: {{ book.price }}</p>

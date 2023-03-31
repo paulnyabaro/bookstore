@@ -9,7 +9,9 @@
             {% for book in book_list %}
             <div class="col-md-4">
                 <div class="card p-2">
+                    {% if book.cover %}
                     <img src="{{ book.cover.url }}" width="100%" alt="">
+                    {% endif %}
                     <a href="{{ book.get_absolute_url }} ">{{ book.title }}</a>
                 </div>
             </div>
