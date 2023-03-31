@@ -37,7 +37,7 @@ class BookTests(TestCase):
         self.assertEqual(f'{self.book.price}', '25.00')
 
     def test_book_list_view_for_logged_in_users(self):
-        self.client.login(email='reviewuser@gmail.com', password='testpass123')
+        self.client.login(email='reviewuser@email.com', password='testpass123')
         response = self.client.get(reverse('book_list'))
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, 'Harry Potter')
@@ -52,7 +52,7 @@ class BookTests(TestCase):
         self.assertContains(response, 'Log In')
 
     def test_book_detail_view_with_permissions(self):
-        self.client.login(email='reviewuser@gmail.com', password='testpass123')
+        self.client.login(email='reviewuser@email.com', password='testpass123')
         self.user.user_permissions.add(self.special_permission)
         response = self.client.get(self.book.get_absolute_url())
         no_response = self.client.get('/books/1234')
