@@ -23,7 +23,7 @@ class SearchResultsListView(ListView):
     context_object_name = 'book_list'
     template_name = 'books/search_results.html'
 
-    # Getting result from q input
+    # Getting result from q input field
     def get_queryset(self):
         query = self.request.GET.get('q')
         return Book.objects.filter(
