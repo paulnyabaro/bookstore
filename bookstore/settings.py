@@ -201,3 +201,4 @@ MEDIA_ROOT = BASE_DIR / 'media/'
 
 # Django Debug Toolbar
 hostname, _, ips = socket.gethostbyname_ex(socket.gethostname())
+INTERNAL_IPS = [ip[:-1] + '1' for ip in ips]
