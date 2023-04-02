@@ -13,6 +13,9 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 from environs import Env
 
+# For Django Toolbar
+import socket
+
 env = Env()
 env.read_env()
 
@@ -195,3 +198,6 @@ DEFAULT_FROM_EMAIL = 'admin@djangobookstore.com'
 # Media settings
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media/'
+
+# Django Debug Toolbar
+hostname, -, ips = socket.gethostbyname_ex(socket.gethostname())
