@@ -200,4 +200,4 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media/'
 
 # Django Debug Toolbar
-hostname, -, ips = socket.gethostbyname_ex(socket.gethostname())
+hostname, _, ips = socket.gethostbyname_ex(socket.gethostname())
