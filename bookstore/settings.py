@@ -209,3 +209,6 @@ INTERNAL_IPS = [ip[:-1] + '1' for ip in ips]
 CACHE_MIDDLEWARE_ALIAS = 'default'
 CACHE_MIDDLEWARE_SECONDS = 604800 # 1 week in seconds
 CACHE_MIDDLEWARE_KEY_PREFIX = ''
+
+# Secure ssl redirect
+SECURE_SSL_REDIRECT = env.bool('DJANGO_SECURE_SSL_REDIRECT', default=True)
